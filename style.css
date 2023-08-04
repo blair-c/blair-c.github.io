@@ -1,0 +1,99 @@
+:root {
+  --clr-bg: #fff1f2;
+  --clr-primary: #D9738E;
+  --clr-primary-light: #D99AAB;
+  --clr-secondary: #5A6C8C;
+  --clr-secondary-dark: #334155;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--clr-secondary-dark);
+  background-color: white;
+  font-size: 16px;
+  font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 300;
+  margin: 0;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+svg {
+  fill: currentColor;
+}
+
+h1 {
+  font-size: 3rem;
+  border-bottom: .25rem solid var(--clr-secondary);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+} /* https://tailwindcss.com/docs/screen-readers */
+
+.main-list {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .main-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* @media (min-width: 1280px) {
+  .main-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+} */
+
+.main-list li:hover {
+  transform: scale(1.05);
+  transition: transform .1s ease-in;
+}
+
+.main-list li a {
+  display: flex;
+  align-items: center;
+  border: .25rem solid var(--clr-primary);
+  padding: .5rem 1rem;
+}
+
+.main-list li a svg {
+  width: 1.125rem;
+  margin-right: .25rem;
+}
+
+.main-list li a span {
+  color: var(--clr-secondary);
+}
