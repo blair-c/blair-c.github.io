@@ -63,8 +63,6 @@ Right now I'm on watch #14, having cut down the film to just its dialogue around
 
 Speaking of lyrics, I also had a couple songs that I went through the process of learning all the lyrics to. I've found this quite helpful, both analysing the lyrics alongside their English meanings, as well as needing to match the singer's pronunciation to keep up with the beat.
 
-{{< spotify 6q4zA7hWKFF6wsJ64DWdwU >}}
-
 ## Reading
 
 At the start of June I also added reading to my routine when I was recommended *Pokémon Adventures*, the original Pokémon manga, by a friend. I found that choosing a graphic novel as my introduction to reading was a good call as the drawings can provide additional context as to what is happening in the story. Though there were of course.. exceptions...
