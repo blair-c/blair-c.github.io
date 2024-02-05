@@ -15,15 +15,10 @@
 
     <title>{{ .Page.Title }}</title>
     <meta name="description" content="{{ .Description }}">
-    {{ $img := "/img/default-cover.png" }}
-    {{ $path := .RelPermalink }}
-    {{ if .IsTranslated }}
-      {{ $en := index .AllTranslations 0 }}{{ $path = $en.RelPermalink }}
-    {{ end }}
-    {{ if fileExists (print $path "img/thumb.png") }}{{ $img = (print $path "img/thumb.png") }}{{ end }}
-    <meta name="image" content="{{ $img | absURL }}">
+    {{ $img := (print .RelPermalink "img/thumb.png") | absURL }}
+    <meta name="image" content="{{ $img }}">
 
-    <meta property="og:image" content="{{ $img | absURL }}" />
+    <meta property="og:image" content="{{ $img }}" />
     <meta property="og:title" content="{{ .Title }}" />
     <meta property="og:description" content="{{ .Description }}" />
     <meta property="og:site_name" content="blair!">
