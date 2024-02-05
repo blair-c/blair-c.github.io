@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="apple-touch-icon" type="image/svg+xml" href="/favicon.svg">
+  
+    <link rel="stylesheet" href="/style.css"type="text/css">
+
+    <link rel="canonical" href="{{ .Permalink | absURL }}" />
+    <link rel="manifest" href="/manifest.json">
+
+    <title>{{ .Page.Title }}</title>
+    <meta name="description" content="{{ .Description }}">
+    {{ $img := "/img/default-cover.png" }}
+    {{ $path := .RelPermalink }}
+    {{ if .IsTranslated }}
+      {{ $en := index .AllTranslations 0 }}{{ $path = $en.RelPermalink }}
+    {{ end }}
+    {{ if fileExists (print $path "thumb.png") }}{{ $img = (print $path "thumb.png") }}{{ end }}
+    <meta name="image" content="{{ $img | absURL }}">
+
+    <meta property="og:image" content="{{ $img | absURL }}" />
+    <meta property="og:title" content="{{ .Title }}" />
+    <meta property="og:description" content="{{ .Description }}" />
+    <meta property="og:site_name" content="blair!">
+    <meta property="og:url" content="{{ .Permalink | absURL }}" />
+    {{ template "_internal/twitter_cards.html" . }}
+  </head>
+
+	<body class="font-sans text-slate-700">
+		<div class="fixed z-0 w-80 h-80 rounded-full bg-fuchsia-600 blur-[350px] opacity-70 lg:opacity-85 xl:opacity-100 left-0 top-0"></div>
+		<div class="fixed z-0 w-80 h-80 rounded-full bg-indigo-600 blur-[250px] opacity-70 lg:opacity-85 xl:opacity-100 right-0 bottom-0"></div>
+
+    {{ block "header" . }}
+    <!-- navbar -->
+    {{ end }}
+    {{ block "main" . }}
+    <!-- main -->
+    {{ end }}
+    {{ block "footer" . }}
+    <!-- footer -->
+    {{ end }}
+  </body>
+</html>

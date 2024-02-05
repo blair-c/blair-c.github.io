@@ -1,0 +1,38 @@
+{{ define "header" }}
+{{ end }}
+
+{{ define "main" }}
+<div class="absolute inset-0 bg-[url(/grid.svg)] bg-top [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
+
+<main id="main-content">
+  <article class="relative w-full px-4 py-12 my-12 bg-white shadow-xl shadow-slate-700/10 ring-1 ring-gray-900/5 mx-auto max-w-4xl md:pt-16 md:pb-28">
+    <header class="max-w-prose md:text-lg mx-auto">
+        <h1 class="text-4xl font-bold text-slate-950 mb-2">{{ .Title }}</h1>
+        <p class="text-xl leading-normal text-slate-500">{{ .Description }}</p>
+        <p class="flex gap-2 flex-wrap whitespace-nowrap text-sm text-slate-500 border-y border-slate-200 py-4 mt-4 mb-6">
+          {{ with .Params.link.live }}
+            <a href="{{ . }}" class="hover:text-slate-700" target=_blank rel="noopener noreferrer">
+              Visit Project
+            </a>
+            <span class="select-none pointer-events-none text-slate-300">\</span>
+          {{ end }}
+          {{ with .Params.link.code }}
+            <a href="{{ . }}" class="hover:text-slate-700" target=_blank rel="noopener noreferrer">
+              View Code
+            </a>
+            <span class="select-none pointer-events-none text-slate-300">\</span>
+          {{ end }}
+          {{ with .Date }}{{ . | time.Format ":date_medium" }}{{ end }}
+          {{ .Params.userCount }}
+        </p>
+    </header>
+    <div class="prose md:prose-lg prose-slate prose-img:select-none prose-img:rounded-2xl md:prose-img:rounded-3xl prose-figcaption:text-center mx-auto">
+        <img src="thumb.png" class="select-none" />
+        {{ .Content }}
+    </div>
+  </article>
+</main>
+{{ end }}
+
+{{ define "footer" }}
+{{ end }}

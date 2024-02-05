@@ -1,0 +1,100 @@
+{{ define "header" }}
+{{ end }}
+
+{{ define "main" }}
+<main id="main-content" class="relative mx-4 xs:mx-6 md:mx-10">
+  <div class="max-w-4xl mx-auto">
+      <div class="flex flex-col gap-8 py-20">
+          <h1 class="text-3xl font-semibold text-slate-800">
+            Hi, I'm Blair<span class="select-none pointer-events-none"> 👋</span>
+          </h1>
+          <p class="max-w-[50ch]">
+            I'm a <span class="font-medium">full-stack software developer</span> with an emphasis on frontend.
+            Aspects of development I find particularly interesting include rendering strategies, UX, and accessibility.
+          </p>
+          <ul class="flex gap-2 flex-wrap">
+            <li>
+              <a
+                href="https://github.com/blair-c" target=_blank rel="noopener noreferrer"
+                class="text-orange-400 border-b border-transparent hover:border-orange-300"
+              >
+                GitHub
+              </a>
+            </li>
+            <div class="select-none pointer-events-none opacity-15">\</div>
+            <li>
+              <a
+                href="https://linkedin.com/in/blair-cardiel" target=_blank rel="noopener noreferrer"
+                class="text-blue-400 border-b border-transparent hover:border-blue-300"
+              >
+                LinkedIn
+              </a>
+            </li>
+            <div class="select-none pointer-events-none opacity-15">\</div>
+            <li>
+              <a
+                href="/Blair_Cardiel_resume.pdf" target=_blank rel="noopener noreferrer"
+                class="text-emerald-500 border-b border-transparent hover:border-emerald-400"
+              >
+                Resume
+              </a>
+            </li>
+            <div class="select-none pointer-events-none opacity-15">\</div>
+            <li>
+              <a
+                href="mailto:blaircardiel@gmail.com" target=_blank rel="noopener noreferrer"
+                class="text-rose-400 border-b border-transparent hover:border-rose-300 whitespace-nowrap"
+              >
+                blaircardiel@gmail.com
+              </a>
+            </li>
+          </ul>
+      </div>
+      <div>
+        <h2 class="text-2xl font-semibold text-slate-800 mb-8">My Projects</h2>
+        <ul class="grid gap-7 md:grid-cols-2">
+          {{ range (where .Site.RegularPages ".Params.section" "projects") }}
+            <li>
+              <a href="{{ .RelPermalink }}">
+                <div class="relative max-w-md rounded-2xl rounded-tr rounded-bl overflow-hidden shadow-lg shadow-slate-700/10 ring-1 ring-gray-900/5 hover:scale-[1.01] transition-all">
+                  <img
+                    src='{{ print .RelPermalink "thumb.png" }}'
+                    alt='{{ .Title }} Homepage'
+                  />
+                  <div class="p-6 pb-7 bg-white">
+                    <p class="text-xl font-semibold">{{ .Params.descShort }}</p>
+                    <p class="mt-2 text-slate-500">{{ .Params.userCount }}</p>
+                    <p class="mt-3 font-medium text-indigo-400">
+                      Read More →
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+    <div class="mt-24 mb-36">
+      <h2 class="text-2xl font-semibold text-slate-800 mb-8">My Blog??</h2>
+      <ul class="grid gap-7">
+        {{ range (where .Site.RegularPages ".Params.section" "blog") }}
+          <li>
+            <a href="{{ .RelPermalink }}">
+              <div class="flex justify-between gap-6 p-6 bg-white relative w-full rounded-2xl shadow-lg shadow-slate-700/10 ring-1 ring-gray-900/5 hover:scale-[1.01] transition-all">
+                <div>
+                  <p class="text-xl font-semibold">{{ .Title }}</p>
+                  <p class="mt-2 text-slate-500">{{ .Description }}</p>
+                </div>
+                <img src='{{ print .RelPermalink "thumb.png" }}' class="h-[60px] w-auto rounded-xl object-fill" />
+              </div>
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</main>
+{{ end }}
+
+{{ define "footer" }}
+{{ end }}

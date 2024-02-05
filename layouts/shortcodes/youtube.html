@@ -1,0 +1,10 @@
+{{ $id := .Get 0 }}{{ $title := .Get 1 }}
+<div class="relative pb-[56.25%] my-[2em] md:my-[1.7777778em] h-0 overflow-hidden rounded-2xl md:rounded-3xl select-none">
+  <iframe 
+    src="https://www.youtube.com/embed/{{ $id }}"
+    title="{{ $title }}"
+    class="absolute top-0 left-0 w-full h-full border-none"
+    allowfullscreen
+  >
+  </iframe>
+</div>

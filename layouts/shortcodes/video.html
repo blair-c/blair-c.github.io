@@ -1,0 +1,6 @@
+{{ $vid := print (page.RelPermalink) "vid/" (.Get 0) ".mp4"}}
+<video controls preload="metadata" disablepictureinpicture class="w-full cursor-pointer rounded-2xl md:rounded-3xl">
+  <source src='{{ $vid }}' type="video/mp4">
+  Your browser doesn't support the <code>video</code> HTML element.
+  Download the <a href="{{ $vid }}">MP4</a> video.
+</video>
