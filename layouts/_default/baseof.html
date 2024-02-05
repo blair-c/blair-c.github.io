@@ -20,7 +20,7 @@
     {{ if .IsTranslated }}
       {{ $en := index .AllTranslations 0 }}{{ $path = $en.RelPermalink }}
     {{ end }}
-    {{ if fileExists (print $path "thumb.png") }}{{ $img = (print $path "thumb.png") }}{{ end }}
+    {{ if fileExists (print $path "img/thumb.png") }}{{ $img = (print $path "img/thumb.png") }}{{ end }}
     <meta name="image" content="{{ $img | absURL }}">
 
     <meta property="og:image" content="{{ $img | absURL }}" />
