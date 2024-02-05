@@ -85,7 +85,7 @@
                   <p class="text-xl font-semibold">{{ .Title }}</p>
                   <p class="mt-2 text-slate-500">{{ .Description }}</p>
                 </div>
-                <img src='{{ print .RelPermalink "thumb.png" }}' class="h-[60px] w-auto rounded-xl object-fill" />
+                <img src='{{ print .RelPermalink "thumb.png" }}' class="hidden xs:flex h-[60px] w-auto rounded-xl object-fill" />
               </div>
             </a>
           </li>
