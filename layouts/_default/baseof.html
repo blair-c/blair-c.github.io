@@ -15,7 +15,7 @@
 
     <title>{{ .Page.Title }}</title>
     <meta name="description" content="{{ .Description }}">
-    {{ $img := (print .RelPermalink "img/thumb.png") | absURL }}
+    {{ $img := (print .RelPermalink "thumb.png") | absURL }}
     <meta name="image" content="{{ $img }}">
 
     <meta property="og:image" content="{{ $img }}" />
