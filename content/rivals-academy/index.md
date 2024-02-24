@@ -2,7 +2,7 @@
 title: Rivals Academy
 description: Website + API for the Rivals Academy gaming community
 descShort: Informational Site + API
-userCount: Serves ~6k unique visitors monthly
+userCount: Serves ~5k unique visitors monthly
 link:
   live: https://rivals.academy
   code: https://github.com/blair-c/rivals.academy
@@ -12,7 +12,7 @@ weight: 1
 
 Built with [Hugo](https://gohugo.io), JavaScript + CSS, and [FFmpeg](https://ffmpeg.org) + [ImageMagick](https://imagemagick.org) for media optimization, with automated site builds via [GitHub Actions CI/CD](https://github.com/features/actions) deployed onto [Cloudflare Pages](https://pages.cloudflare.com)
 
-Rivals Academy is the largest website surrounding the indie fighting game [Rivals of Aether](https://rivalsofaether.com), serving as the central hub for those seeking resources to improve their gameplay. The site receives roughly 300k requests each month, with a 100/100/100/100 [Google Lighthouse](https://developer.chrome.com/docs/lighthouse) score on most pages.
+Rivals Academy is the largest website surrounding the indie fighting game [Rivals of Aether](https://rivalsofaether.com), serving as the central hub for those seeking resources to improve their gameplay. The site receives roughly 250k network requests each month, with a 100/100/100/100 [Google Lighthouse](https://developer.chrome.com/docs/lighthouse) score on most pages.
 
 ## Lectures
 
@@ -45,6 +45,8 @@ Both the pages themselves and a public API of the data are generated from the sa
     caption="An example response from the public API, and the original YAML file"
 >}}
 
-The glossary page provides definitions for all the listed stats and more, alongside automated character comparisons when applicable.
-
-![The Library Glossary, scrolled to comparisons of the cast's jumping abilities](img/library-comparisons.png)
+{{< figure
+    src="img/library-comparisons.png"
+    alt="The Library Glossary, scrolled to comparisons of the cast's jumping abilities"
+    caption="A glossary page provides definitions for all the listed stats, with automatically generated character comparisons"
+>}}
