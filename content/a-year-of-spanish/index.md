@@ -99,7 +99,7 @@ By the end of the first volume where the plot starts to deviate more heavily fro
 
 ## Counting the Hours & Looking Ahead
 
-Reviewing and setting new resolutions for 2024, I tallied up and roughly estimated that from the May to the end of 2023, excluding August, I averaged ~40 minutes/day of listening/reading. There are also a couple things that I worked into my daily life and so aren't as trackable:
+Reviewing and setting new resolutions for 2024, I tallied up and roughly estimated that from May to the end of 2023, excluding August, I averaged ~40 minutes/day of listening/reading. There are also a couple things that I worked into my daily life and so aren't as trackable:
 
 - Texting in Spanish with my friend I began learning with: This unfortunately pewtered out around summer as he never quite got the same semi-consistent practice going after Language Transfer (te extraño mucho Cass)
 - Setting my phone, computer, and common apps+websites to Spanish, and beginning to follow/join some Spanish-speaking YouTube channels and Discord servers around my interests: I did these around July but believe I definitely could have sooner
