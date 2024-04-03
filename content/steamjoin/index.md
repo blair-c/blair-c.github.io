@@ -7,6 +7,7 @@ link:
   live: https://steamjoin.com
   code: https://github.com/blair-c/SteamJoin
 section: projects
+weight: 2
 ---
 
 Built with [Go](https://go.dev), [go-chi](https://go-chi.io), [Tailwind CSS](https://tailwindcss.com), [discord.py](https://discordpy.readthedocs.io), and [redis](https://redis.io)
