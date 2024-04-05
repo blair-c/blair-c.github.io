@@ -58,4 +58,6 @@ The same troubleshooting instructions as on Discord are displayed if a problem i
 
 All in all, this comes together to create a much more quick and seamless user experience: We've gone from players needing to Alt+Tab and copy/paste across three different programs to everything being done through Discord.
 
+![Three players using SteamJoin in the most recent Rivals Amateur Series bracket](img/current.png)
+
 Upon its release, SteamJoin quickly became the standard for tournament and general matchmaking across the game's community.
