@@ -38,6 +38,10 @@ As an aside, I found a little bit of time spent studying Spanish phonetics to be
 
 {{< youtube VUELoKPdNoM "Why is Spanish so HARD to understand? Connected Speech" >}}
 
+Another very helpful resource has been [Clases con Clau](https://www.youtube.com/playlist?list=PLzIqwIlhO5bhf6vywsTFz2cgUw0MNryt0):
+
+{{< youtube 5t8R6P1-XE0 "Habla MÁS RÁPIDO español HACIENDO ESTO | Pronunciación en español" >}}
+
 ## Reading
 
 Another goal I set at the start of the year was to begin to incorporate pure reading into my routine. I technically didn't fail at this, reading exactly one (1) non-comic book: *El principito*. However, obviously not ideal. 
